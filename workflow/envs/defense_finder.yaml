@@ -1,0 +1,10 @@
+channels:
+  - bioconda
+  - biocore
+  - defaults
+dependencies:
+  - python
+  - hmmer
+  - pip
+  - pip:
+    - mdmparis-defense-finder

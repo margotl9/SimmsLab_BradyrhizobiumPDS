@@ -1,0 +1,17 @@
+home_dir: "/global/home/users/margotl/BradyrhizobiumPDS/"
+#------------------------------------
+# Analysis options
+#------------------------------------
+results: "/global/home/users/margotl/BradyrhizobiumPDS/RESULTS/"
+# results: "/Users/margotlavitt/Cal/Fall_23/BradyrhizobiumPDS/RESULTS/"
+
+#------------------------------------
+# Resource options
+#------------------------------------
+resources: "/global/home/users/margotl/BradyrhizobiumPDS/resources/"
+# resources: "/Users/margotlavitt/Cal/Fall_23/BradyrhizobiumPDS/resources/"
+input_dir: "/global/home/users/margotl/BradyrhizobiumPDS/resources/input/"
+
+# Bradyrhizobium downloaded from NCBI
+db: "/global/home/users/margotl/BradyrhizobiumPDS/resources/brady_db/"
+# db: "/Users/margotlavitt/Cal/Fall_23/BradyrhizobiumPDS/brady_db/"

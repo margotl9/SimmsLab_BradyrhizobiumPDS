@@ -1,0 +1,6 @@
+location	site_plant	fasta
+RT	7b	/global/home/users/margotl/BradyrhizobiumPDS/resources/input/RT.7b.fasta
+LA	2.1	/global/home/users/margotl/BradyrhizobiumPDS/resources/input/LA.2.1.fasta
+LA	3.X	/global/home/users/margotl/BradyrhizobiumPDS/resources/input/LA.3.X.fasta
+LA	6.1	/global/home/users/margotl/BradyrhizobiumPDS/resources/input/LA.6.1.fasta
+LB	12.1	/global/home/users/margotl/BradyrhizobiumPDS/resources/input/LB.12.1.fasta

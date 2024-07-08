@@ -1,0 +1,41 @@
+import pandas as pd
+
+# Load sample
+configfile: "config/config.yaml"
+
+samples_df = pd.read_csv("config/samples.tsv", sep = "\t")
+LOCATION_SITE_PLANT = samples_df['location']+"."+samples_df["site_plant"]
+
+
+# Load config paths
+resources = config["resources"]
+input_dir = config["input_dir"]
+db = config['db']
+results = config['results']
+
+
+#--------------------------------------
+#  Rules
+#--------------------------------------
+include: "rules/01_phage_defense.smk"
+
+# --------------------------------------
+#  Pipeline outputs
+# --------------------------------------
+def get_final_outputs(wildcards):
+    final_output = []
+    
+    # 01_PHAGE_DEFENSE outputs
+    df_outputs = expand(results + '01_PHAGE_DEFENSE_SYS/defense_finder_analysis/{location_site_plant}_defense_finder_analysis.csv', location_site_plant=LOCATION_SITE_PLANT)
+    for d in df_outputs:
+            final_output.append(d)
+    
+    padloc_outputs = expand(results + '01_PHAGE_DEFENSE_SYS/{location_site_plant}/PADLOC/{location_site_plant}_padloc.csv', location_site_plant=LOCATION_SITE_PLANT)
+    for padloc in padloc_outputs:
+            final_output.append(padloc)
+
+    return final_output
+
+rule all:
+    input:
+        get_final_outputs

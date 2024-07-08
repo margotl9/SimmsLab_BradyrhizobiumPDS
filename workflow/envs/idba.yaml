@@ -1,0 +1,7 @@
+channels:
+  - bioconda
+  - defaults
+
+dependencies:
+  - idba
+  - libgcc

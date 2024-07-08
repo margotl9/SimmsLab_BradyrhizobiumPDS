@@ -1,0 +1,8 @@
+channels:
+  - conda-forge
+  - bioconda
+  - padlocbio
+
+
+dependencies:
+  - padloc=2.0.0
