@@ -43,7 +43,7 @@ Either edit it directly on cluster by opening an interactive session on https://
 * ```config/samples.tsv```: sample information 
 	* location: RT
 	* site_plant: 7b
-	* fasta: path to file **must be stored in `resources/input`**
+	* fasta: path to file **fasta files must be stored in `resources/input`**
 
 
 
