@@ -19,9 +19,7 @@ Requires use of computing cluster and optionally GitHub.
 ### 1. Set Up on Cluster
 1. Set up [snakemake](https://snakemake.readthedocs.io/en/stable/getting_started/installation.html#full-installation) environment using [mamba](https://mamba.readthedocs.io/en/latest/user_guide/mamba.html#mamba) (You only need to run this once)
 
-	```mamba create -c conda-forge -c bioconda -n snakemake snakemake```
-	
-	```mamba activate snakemake```
+	```mamba create -y -n simmslab_BPDS -c conda-forge -c bioconda mamba snakemake snakefmt snakedeploy git=2.34.1```
 2. Make a new directory where you want to store and run this pipeline and its output
 	
 	```mkdir <insert directory name>```
@@ -48,9 +46,9 @@ Either edit it directly on cluster by opening an interactive session on https://
 
 
 ### 3. Run on cluster
-1. Activate `snakemake`
+1. Activate `simmslab_BPDS`
 	
-	```mamba activate snakemake```
+	```mamba activate simmslab_BPDS```
 1. Dry-run to ensure proper rule chaining and input paths
 	
 	```snakemake --profile config/simple -p --dry-run```
