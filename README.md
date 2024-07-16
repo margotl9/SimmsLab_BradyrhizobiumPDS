@@ -36,7 +36,7 @@ Requires use of computing cluster and optionally GitHub.
 Either edit it directly on cluster by opening an interactive session on https://ood.brc.berkeley.edu [instructions here](https://docs-research-it.berkeley.edu/services/high-performance-computing/user-guide/ood/#code-server-vs-code) or by creating a Git repository for current directory to edit locally. I personally used the latter because the interactive session constantly prompted me to log in.
 
 **Fill in config** - _none of the following fields can be left blank!_
-* ```config/config.yaml```: full paths for resources and results directories
+* ```config/config.yaml```: full paths for resources and results directories -- make sure these directories have already been created before running.
 * ```config/simple/config.yaml```: `sbatch` and other job submission fields as necessary
 * ```config/samples.tsv```: sample information 
 	* location: RT
