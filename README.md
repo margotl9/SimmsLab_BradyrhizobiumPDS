@@ -33,7 +33,7 @@ Requires use of computing cluster and optionally GitHub.
 	_If you run the command `ls`, you should now see 'config' and 'workflow' directories_
 
 ### 2. Modify Config
-Either edit it directly on cluster by opening an interactive session on https://ood.brc.berkeley.edu [instructions here](https://docs-research-it.berkeley.edu/services/high-performance-computing/user-guide/ood/#code-server-vs-code) or by creating a Git repository for current directory to edit locally. I personally used the latter because the interactive session constantly prompted me to log in.
+Either edit it directly on cluster by opening an interactive session in VS Code on https://ood.brc.berkeley.edu [instructions here](https://docs-research-it.berkeley.edu/services/high-performance-computing/user-guide/ood/#code-server-vs-code) (recommended) or by creating a Git repository for current directory to edit locally.
 
 **Fill in config** - _none of the following fields can be left blank!_
 * ```config/config.yaml```: full paths for resources and results directories -- make sure these directories have already been created before running.
