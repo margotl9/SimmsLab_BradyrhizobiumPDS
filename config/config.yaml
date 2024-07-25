@@ -1,16 +1,16 @@
-# example -- results: "/global/home/users/yourname/Bradyrhizobium_PDS_analysis/"
-home_dir: ""
+# example -- analysis_dir: "/global/home/users/yourname/Bradyrhizobium_PDS_analysis/"
+analysis_dir: ""
 #------------------------------------
 # Analysis options
 #------------------------------------
-# example -- results: "/global/home/users/yourname/Bradyrhizobium_PDS_analysis/results"
+# example -- results: "/global/home/users/yourname/Bradyrhizobium_PDS_analysis/results/"
 results: ""
 
 #------------------------------------
 # Resource options
 #------------------------------------
-# example -- results: "/global/home/users/yourname/Bradyrhizobium_PDS_analysis/resources"
+# example -- resources: "/global/home/users/yourname/Bradyrhizobium_PDS_analysis/resources/"
 resources: ""
 
-# example -- results: "/global/home/users/yourname/Bradyrhizobium_PDS_analysis/resources/input"
+# example -- input_dir: "/global/home/users/yourname/Bradyrhizobium_PDS_analysis/resources/input/"
 input_dir: ""

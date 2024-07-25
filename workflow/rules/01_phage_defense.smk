@@ -8,7 +8,6 @@ samples_df = pd.read_csv("config/samples.tsv", sep="\t")
 # Load config paths
 resources = config["resources"]
 input_dir = config["input_dir"]
-db = config['db']
 results = config['results']
 
 
