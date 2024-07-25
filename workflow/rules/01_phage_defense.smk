@@ -81,7 +81,7 @@ rule padloc:
 	input:
 		features_gff = resources + '01_gene_protein_prediction/{location_site_plant}.gff',
 		genome_faa = resources + '01_gene_protein_prediction/{location_site_plant}.faa',
-		padloc_db = config["home_dir"] + ".snakemake/conda/e9ed3c60150a9296743ff09672bfdad2_/data/hmm/padlocdb.hmm"
+		padloc_db = config["analysis_dir"] + ".snakemake/conda/e9ed3c60150a9296743ff09672bfdad2_/data/hmm/padlocdb.hmm"
 	output:
 		results + '01_PHAGE_DEFENSE_SYS/{location_site_plant}/PADLOC/{location_site_plant}_padloc.csv'
 	params:
