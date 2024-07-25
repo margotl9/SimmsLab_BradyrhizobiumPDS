@@ -69,7 +69,7 @@ rule analyze_PDS:
 # -----------------------------------------------------
 rule padloc_db:
 	output:
-		config["home_dir"] + ".snakemake/conda/e9ed3c60150a9296743ff09672bfdad2_/data/hmm/padlocdb.hmm"
+		config["analysis_dir"] + ".snakemake/conda/e9ed3c60150a9296743ff09672bfdad2_/data/hmm/padlocdb.hmm"
 	conda:
 		"../envs/padloc.yaml"
 	shell:
