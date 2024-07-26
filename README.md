@@ -37,7 +37,6 @@ Either edit it directly on cluster by opening an interactive session in VS Code 
 
 **Fill in config** - _none of the following fields can be left blank!_
 * ```config/config.yaml```: full paths for resources and results directories -- make sure these directories have already been created before running.
-* ```config/simple/config.yaml```: `sbatch` and other job submission fields as necessary
 * ```config/samples.tsv```: sample information 
 	* location: RT
 	* site_plant: 7b
@@ -51,10 +50,10 @@ Either edit it directly on cluster by opening an interactive session in VS Code 
 	```mamba activate simmslab_BPDS```
 1. Dry-run to ensure proper rule chaining and input paths
 	
-	```snakemake --profile config/simple -p --dry-run```
+	```snakemake -p --dry-run```
 3. Run pipeline, specifying an integer (Ex 4) of threads
 	
-	```snakemake --profile config/simple --max-threads <insert number of threads> -p```
+	```snakemake --profile config/simple --use-conda -p```
 
 ## Output
 For every input sequence, with its unique `location` + `site_plant` fields from `samples.tsv`, there should be:
