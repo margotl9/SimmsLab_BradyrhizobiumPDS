@@ -19,7 +19,7 @@ Requires use of computing cluster and optionally GitHub.
 ### 1. Set Up on Cluster
 1. Set up [snakemake](https://snakemake.readthedocs.io/en/stable/getting_started/installation.html#full-installation) environment using [mamba](https://mamba.readthedocs.io/en/latest/user_guide/mamba.html#mamba) (You only need to run this once)
 
-	```mamba create -y -n simmslab_BPDS -c conda-forge -c bioconda mamba snakemake snakefmt snakedeploy git=2.34.1```
+	```mamba create -y -n simmslab_BPDS -c conda-forge -c bioconda mamba snakemake snakefmt snakedeploy git=2.34.1 snakemake-executor-plugin-slurm```
 2. Make a new directory where you want to store and run this pipeline and its output
 	
 	```mkdir <insert directory name>```
